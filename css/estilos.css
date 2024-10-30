@@ -1,0 +1,495 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    color: #365F3D;
+}
+
+
+p, a, label {
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    color: #365F3D;
+    line-height: 25px;
+}
+
+header {
+}
+
+header > div {
+    background: #FFFFFF;
+    color: white;
+    padding: 1em;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 1000000;
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid #365F3D;
+}
+
+header > div a {
+    background: url("../imagenes/logo.png") no-repeat;
+    font-size: 0;
+    margin: 0;
+    /*flex: 1;*/
+    text-align: center;
+    width: 80px;
+    height: 81px;
+
+}
+
+nav {
+    position: fixed;
+    background: #FFFFFF;
+    top: 0;
+    bottom: 0;
+    left: -100vw;
+    width : 80%;
+    transition: 0.7s;
+    z-index: 2;
+}
+
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 80%;
+    margin: 7em auto;
+}
+
+nav ul li a {
+    display: block;
+    padding: .75em 1em;
+    border-bottom: 1px solid #365F3D;
+    color: #365F3D;
+    /*background: white;*/
+    font-size: 16px;
+}
+
+nav ul li a:link {
+    text-decoration: none;
+}
+
+nav ul li:last-child a {
+    border: none;
+}
+
+#menu-toggle {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../imagenes/abrir-menu.png) no-repeat;
+    background-size: contain;
+    margin-top: 2px;
+    margin-right: .5em;
+}
+
+.menu_abierto nav {
+    left: 0;
+}
+
+.menu_abierto #menu-toggle {
+    background-image: url(../imagenes/cerrar-menu.png);
+    width: 20px;
+    height: 20px;
+    background-size: contain;
+    margin-top: 2px;
+    margin-right: .5em;
+}
+
+main {
+    margin-top: 80px;
+    padding-top: 15px;
+}
+
+.titluo-principal {
+    visibility: hidden;
+}
+
+#home h2 {
+    text-align: center;
+    color: #365F3D;
+    margin-bottom: 15px;
+}
+
+.texto-home {
+    width: 90%;
+    margin: auto;
+}
+
+.home {
+    margin-top: 20px;
+}
+
+.home > div {
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+
+.home > div img {
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+#menu h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.menu {
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.menu > div > ul li {
+    list-style: none;
+    line-height: 25px;
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #365F3D 1px solid;
+    padding: 10px 0;
+}
+
+.menu div ul li span:nth-child(2) {
+    font-weight: 700;
+    color: #365F3D;
+}
+
+#tienda h2 {
+    text-align: center;
+    margin: 15px ;
+}
+
+.tienda, .galeria {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.tienda > div, .galeria a {
+    width: 48%;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tienda > div img, .galeria a img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.tienda > div p {
+    margin: 10px 0;
+}
+
+.tienda > div  a {
+    border-radius: 20px;
+    color: #365F3D;
+    width: 80%;
+    padding: 10px ;
+    border: 1px solid #365F3D;
+    text-decoration: none;
+}
+
+#feedback {
+    margin-bottom: 25px;
+}
+
+#feedback h2 {
+    text-align: center;
+    margin-bottom: 15px;
+
+}
+
+.feedback {
+    width: 90%;
+    margin: 0 auto 40px auto;
+}
+
+.feedback form > div {
+    margin-bottom: 15px;
+}
+
+.feedback form > div label{
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.feedback form > div textarea {
+    width: 100%;
+    height: 100px;
+}
+
+#feedback form > input[type=submit] {
+    background: #FFFFFF;
+    border: #365F3D 1px solid;
+    padding: 10px;
+    color: #365F3D;
+    cursor: pointer;
+    width: 130px;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif !important;
+}
+
+.ubicacion-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.ubicacion-header h2 {
+    font-size: 30px
+}
+
+.ubicacion-header img {
+    width: 30%;
+}
+
+#contacto {
+    padding: 12px;
+}
+
+.form-contacto form > div {
+    margin-bottom: 10px;
+}
+
+.form-contacto form > div label {
+    width: 100%;
+    margin-bottom: 5px;
+    display: inline-block;
+}
+
+.form-contacto form > div input, textarea {
+    width: 100%;
+    padding: 7px 5px;
+    border: 1px solid #365F3D;
+}
+
+.form-contacto form > div textarea {
+    height: 150px;
+}
+
+.boton-contacto {
+    margin-top: 7px;
+    padding: 10px;
+    width: 120px;
+    border: #365F3D 1px solid;
+    color: #365F3D;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif !important;
+    background: #FFFFFF;
+}
+
+.boton-contacto:hover, #feedback form > input[type=submit]:hover {
+    background: #FFFFFF;
+    color: #365F3D;
+}
+
+.mapa {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.mapa iframe {
+    width: 100%;
+    height: 150px;
+    border: 0;
+}
+
+
+#publicidad {
+    display: flex;
+    justify-content: center;
+}
+
+#publicidad iframe {
+    width: 300px;
+    height: 600px;
+    object-fit: cover;
+    justify-content: center;
+    border: 0;
+}
+
+.footer {
+    background: #365F3D;
+    padding: 10px;
+    text-align: center;
+    color: #FFFFFF;
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.footer p {
+    color: #FFFFFF;
+}
+
+.footer a  {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+/* Ajustes para pantallas grandes */
+@media only screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #365F3D;
+    }
+
+    header div {
+        border-bottom: 0;
+    }
+    header div, nav {
+        position: static;
+    }
+
+
+    header nav ul {
+        margin: 0;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+
+    header nav ul li a {
+        border-bottom: none;
+        background: none;
+        color: #365F3D;
+        padding-bottom: 3px;
+    }
+
+    main {
+        margin-top: 0;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+
+    .home {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .home > div {
+        width: 48%;
+    }
+
+    .menu {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .menu > div {
+        width: 48%;
+    }
+
+    .tienda > div {
+        width: 32%;
+    }
+
+    .feedback form {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .feedback form > div {
+        width: 48%;
+    }
+
+    .galeria {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .galeria a {
+        width: 24%;
+    }
+
+    #contacto {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #contacto > div {
+        width: 48%;
+    }
+
+    .mapa iframe {
+        height: 100%;
+    }
+
+    #publicidad iframe {
+        width: 728px;
+        height: 90px;
+        object-fit: cover;
+        justify-content: center;
+
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    main {
+        width: 1200px;
+        margin: auto;
+    }
+
+    .lisNavBar li a:hover {
+        color: #AFC126;
+    }
+
+    .tienda a:hover {
+        background: #365F3D;
+        color: #FFFFFF;
+    }
+
+    input[type=submit]:hover {
+        background: #365F3D !important;
+        color: #FFFFFF !important;
+    }
+
+    #contacto {
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 60px !important;
+    }
+}
