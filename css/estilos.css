@@ -354,6 +354,15 @@ main {
     display: inline-block;
 }
 
+.link-presentacion {
+    border: 1px solid #FFFFFF;
+    padding: 12px 10px;
+}
+
+.link-presentacion:hover {
+    background: #818812;
+}
+
 /* Ajustes para pantallas grandes */
 @media only screen and (min-width: 768px) {
 
@@ -490,6 +499,6 @@ main {
     }
 
     h2 {
-        font-size: 60px !important;
+        /*font-size: 60px !important;*/
     }
 }

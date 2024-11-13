@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+}
+
+
+p, a, label {
+    font-family: "Montserrat", sans-serif !important;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 25px;
+}
+
+
+.parrafo-color {
+    color: #818812;
+}
+
+.main-presentacion {
+    padding-top: 0 !important;
+}
+
+.title-presentacion {
+    position: absolute;
+    left: -999999px;
+}
+
+.section {
+    text-align: center;
+    /*border: 1px solid #365F3D;*/
+}
+
+
+.logo-presentación img {
+    width: 400px;
+}
+
+.titulo-presentacion {
+    font-size: 60px;
+    margin: 12px;
+    color: #000000;
+}
+
+.alumna img {
+    margin-bottom: 40px;
+}
+
+.alumna p {
+    /*line-height: 25px !important;*/
+    margin-bottom: 0 !important;
+    color: #818812;
+}
+
+.alumna p span {
+    font-weight: 600;
+}
+
+.de-que-trata {
+    padding-top: 0 !important;
+    position: relative;
+    display: inline-block;
+}
+
+.titulo {
+    background: #818812;
+    padding: 70px 0 50px 0;
+    margin-top: -480px;
+    margin-bottom: 50px;
+}
+
+.img {
+    margin-top: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img img {
+    border-radius: 50%;
+    margin-bottom: -50px;
+
+}
+
+.capturas {
+    display: inline-block;
+
+}
+
+.titulo-capturas {
+    background: #818812;
+    padding: 15px 0;
+}
+
+.img-capturas {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: auto;
+    padding: 30px 0;
+}
+
+.img-desk {
+    width: 70%;
+    height: 500px;
+}
+
+.img-mobile {
+    width: 25%;
+    height: 500px;
+}
+
+.titulo-fundamentacion {
+    padding-top: 100px;
+}
+
+.diseno-fundamentacion {
+    width: 600px;
+    margin: 0 auto -100px auto;
+}
+
+.diseno {
+    display: flex;
+    gap: 0 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.bocetos {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: auto;
+    padding: 100px 0;
+    align-items: center;
+}
+
+
+.texto-bocetos {
+    width: 70%;
+
+}
+
+.texto-bocetos h3 {
+    color: #000000;
+}
+
+.texto-bocetos p {
+    font-size: 25px;
+    text-align: left;
+    line-height: 25px;
+    color: #000000;
+}
+
+.bocetos-contenedor {
+    padding: 30px 0;
+
+}
+
+.boceto-titulo {
+    padding-top: 20px;
+}
+
+.link-pagina {
+    background: #818812;
+    color: #FFFFFF;
+    padding: 20px;
+    font-size: 25px;
+    text-decoration: none;
+}
